@@ -47,6 +47,8 @@ ingress:
     kubernetes.io/ingress.class: addon-http-application-routing
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: 0
+
   hosts:
     - host: nugnet.8ac30fc7fe9d40feaee0.eastus.aksapp.io
       paths:
