@@ -15,4 +15,5 @@ FROM base AS final
 LABEL org.opencontainers.image.source="https://github.com/loic-sharma/BaGet"
 WORKDIR /app
 COPY --from=publish /app .
+COPY baget.env baget.env
 ENTRYPOINT ["dotnet", "BaGet.dll"]
